@@ -1,4 +1,4 @@
-package com.jiangjsheng.slidingmenu;
+package com.jiangjiesheng.slidingmenu;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;

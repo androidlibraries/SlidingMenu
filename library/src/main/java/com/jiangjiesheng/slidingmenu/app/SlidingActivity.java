@@ -1,31 +1,31 @@
-package com.jiangjsheng.slidingmenu.app;
+package com.jiangjiesheng.slidingmenu.app;
 
-import com.jiangjsheng.slidingmenu.SlidingMenu;
-
+import android.app.Activity;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
-public class SlidingPreferenceActivity extends PreferenceActivity implements SlidingActivityBase {
+import com.jiangjiesheng.slidingmenu.SlidingMenu;
+
+public class SlidingActivity extends Activity implements SlidingActivityBase {
 
 	private SlidingActivityHelper mHelper;
 
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
-	@Override
+
 	public void onCreate(Bundle savedInstanceState) {
-		mHelper = new SlidingActivityHelper(this);
 		super.onCreate(savedInstanceState);
+		mHelper = new SlidingActivityHelper(this);
 		mHelper.onCreate(savedInstanceState);
 	}
 
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onPostCreate(android.os.Bundle)
 	 */
-	@Override
+
 	public void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		mHelper.onPostCreate(savedInstanceState);
@@ -34,7 +34,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#findViewById(int)
 	 */
-	@Override
+
 	public View findViewById(int id) {
 		View v = super.findViewById(id);
 		if (v != null)
@@ -45,7 +45,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onSaveInstanceState(android.os.Bundle)
 	 */
-	@Override
+
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		mHelper.onSaveInstanceState(outState);
@@ -54,7 +54,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#setContentView(int)
 	 */
-	@Override
+
 	public void setContentView(int id) {
 		setContentView(getLayoutInflater().inflate(id, null));
 	}
@@ -62,7 +62,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#setContentView(android.view.View)
 	 */
-	@Override
+
 	public void setContentView(View v) {
 		setContentView(v, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 	}
@@ -70,7 +70,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#setContentView(android.view.View, android.view.ViewGroup.LayoutParams)
 	 */
-	@Override
+
 	public void setContentView(View v, LayoutParams params) {
 		super.setContentView(v, params);
 		mHelper.registerAboveContentView(v, params);
@@ -124,7 +124,7 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	public void showMenu() {
 		mHelper.showMenu();
 	}
-	
+
 	/* (non-Javadoc)
 	 * @see com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivityBase#showSecondaryMenu()
 	 */
@@ -142,10 +142,11 @@ public class SlidingPreferenceActivity extends PreferenceActivity implements Sli
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onKeyUp(int, android.view.KeyEvent)
 	 */
-	@Override
+	
 	public boolean onKeyUp(int keyCode, KeyEvent event) {
 		boolean b = mHelper.onKeyUp(keyCode, event);
 		if (b) return b;
 		return super.onKeyUp(keyCode, event);
 	}
+
 }

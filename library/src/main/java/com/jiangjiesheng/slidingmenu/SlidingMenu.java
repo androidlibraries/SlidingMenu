@@ -1,4 +1,4 @@
-package com.jiangjsheng.slidingmenu;
+package com.jiangjiesheng.slidingmenu;
 
 import java.lang.reflect.Method;
 
@@ -27,7 +27,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.jiangjsheng.slidingmenu.CustomViewAbove.OnPageChangeListener;
+import com.jiangjiesheng.slidingmenu.CustomViewAbove.OnPageChangeListener;
 
 public class SlidingMenu extends RelativeLayout {
 
@@ -335,7 +335,7 @@ public class SlidingMenu extends RelativeLayout {
 	/**
 	 * 得到下方（滑动菜单）的视图内容
 	 *
-	 * @param view The desired content to display.
+	 * @param v The desired content to display.
 	 */
 	public void setMenu(View v) {
 		mViewBehind.setContent(v);

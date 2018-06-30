@@ -1,4 +1,4 @@
-package com.jiangjsheng.slidingmenu.app;
+package com.jiangjiesheng.slidingmenu.app;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
-import com.jiangjsheng.slidingmenu.SlidingMenu;
+import com.jiangjiesheng.slidingmenu.SlidingMenu;
 
 public class SlidingFragmentActivity extends FragmentActivity implements
 		SlidingActivityBase {

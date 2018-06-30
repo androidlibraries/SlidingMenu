@@ -1,4 +1,4 @@
-package com.jiangjsheng.slidingmenu.app;
+package com.jiangjiesheng.slidingmenu.app;
 
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ListView;
 
-import com.jiangjsheng.slidingmenu.SlidingMenu;
+import com.jiangjiesheng.slidingmenu.SlidingMenu;
 
 public class SlidingListActivity extends ListActivity implements SlidingActivityBase {
 

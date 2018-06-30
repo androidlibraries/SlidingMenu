@@ -26,8 +26,7 @@ android {
     }
 
 }
-buildscript {
-    repositories { //根目录下的 allprojects
+buildscript {    repositories { //根目录下的 allprojects
         // 如果有新的库引入,尽量把慢的放在后面
         // 前4个推荐的 jitpack.io
         mavenLocal()
@@ -57,7 +56,6 @@ buildscript {
     }
 }
 dependencies {
-    compile 'com.android.support:support-v4:21.0.3' //要排除 jar中v4 必须 否则 资源xml中找不到命名空间
+     compile 'com.android.support:support-v4:21.0.3' //奇怪这里居然不能加  //要排除 jar中v4 必须 否则 资源xml中找不到命名空间
     // implementation fileTree(dir: 'libs', include: ['*.jar'])
-
 }
