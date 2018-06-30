@@ -22,3 +22,7 @@ Step 2. Add the dependency
    implementation 'com.github.androidlibraries:SlidingMenu:1.0.0'
 }
 ```
+[![](https://jitpack.io/v/androidlibraries/SlidingMenu.svg)](https://jitpack.io/#androidlibraries/SlidingMenu)
+
+[个人网站 www.jiangjiesheng.com](http://www.jiangjiesheng.com/ "Title") 
+
