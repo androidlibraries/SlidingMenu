@@ -26,3 +26,6 @@ Step 2. Add the dependency
 
 [个人网站 www.jiangjiesheng.com](http://www.jiangjiesheng.com/ "胜行天下网") 
 
+QQ:596957738 微信:596957738
+
+EMail: dev@jiangjiesheng.com
